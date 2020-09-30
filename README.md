@@ -10,6 +10,8 @@ This project is a [_fastlane_](https://github.com/fastlane/fastlane) plugin. To 
 fastlane add_plugin google_chat_v2
 ```
 
+Fork from [narlei/fastlane-plugin-google-chat](https://github.com/narlei/fastlane-plugin-google-chat)
+
 ## About google_chat_v2
 
 google chat v2
@@ -19,6 +21,19 @@ google chat v2
 ## Example
 
 Check out the [example `Fastfile`](fastlane/Fastfile) to see how to use this plugin. Try it by cloning the repo, running `fastlane install_plugins` and `bundle exec fastlane test`.
+
+````ruby 
+google_chat(
+      imageUrl: 'URL_OF_ICON',
+      webhook: 'URL_OF_WEBHOOK',
+      title: 'TITLE',
+      description: 'MESSAGE',
+      section1Title: 'TITLE_SESSION',
+      section1Description: 'DESCRIPTION_SESSION',
+      buttonTitle: "BUTTON_TITLE",
+      buttonUrl: "URL_ACTION"
+    )
+````
 
 **Note to author:** Please set up a sample project to make it easy for users to explore what your plugin does. Provide everything that is necessary to try out the plugin in this project (including a sample Xcode/Android project if necessary)
 
