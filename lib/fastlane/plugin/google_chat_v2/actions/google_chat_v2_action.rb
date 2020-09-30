@@ -1,5 +1,8 @@
 require 'fastlane/action'
 require_relative '../helper/google_chat_v2_helper'
+require 'net/http'
+require 'uri'
+require 'json'
 
 module Fastlane
   module Actions
