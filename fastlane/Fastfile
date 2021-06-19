@@ -9,4 +9,4 @@ lane :test do
         buttonTitle: "OPEN DASHBOARD",
         buttonUrl: "https://fastlane.tools/"
   )
-  end
+end
