@@ -22,7 +22,8 @@ module Fastlane
                   {
                     keyValue: {
                       topLabel: params[:section1Title],
-                      content: params[:section1Description]
+                      content: params[:section1Description],
+                      contentMultiline: true
                     }
                   }
                 ]
