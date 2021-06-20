@@ -60,8 +60,11 @@ module Fastlane
         # Send the request
         response = http.request(request)
 
-        if response.kind_of? Net::HTTPSuccess
+        case response
+        when Net::HTTPSuccess
           UI.message("Message sent!")
+        when Net::HTTPServerError
+          UI.message(response.message)
         else
           UI.message(response.message)
         end
