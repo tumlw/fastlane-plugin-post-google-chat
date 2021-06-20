@@ -1,12 +1,12 @@
 lane :test do
   google_chat_v2(
-        imageUrl: 'https://pbs.twimg.com/profile_images/571414468974739456/XtEn7sJS_400x400.png',
-        webhook: 'URL_OF_WEBHOOK',
-        title: 'Build Success',
-        description: 'Build (develop) success!',
-        section1Title: 'Version',
-        section1Description: '1.1.1 (56)',
-        buttonTitle: "OPEN DASHBOARD",
-        buttonUrl: "https://fastlane.tools/"
+    imageUrl: 'https://pbs.twimg.com/profile_images/571414468974739456/XtEn7sJS_400x400.png',
+    webhook: 'URL_OF_WEBHOOK',
+    title: 'Build Success',
+    description: 'Build (develop) success!',
+    section1Title: 'Version',
+    section1Description: '1.1.1 (56)',
+    buttonTitle: "OPEN DASHBOARD",
+    buttonUrl: "https://fastlane.tools/"
   )
 end
