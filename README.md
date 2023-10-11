@@ -7,7 +7,7 @@
 This project is a [_fastlane_](https://github.com/fastlane/fastlane) plugin. To get started with `fastlane-plugin-google_chat_v2`, add it to your project by running:
 
 ```bash
-fastlane add_plugin google_chat_v2
+fastlane add_plugin post_google_chat
 ```
 
 Fork from [narlei/fastlane-plugin-google-chat](https://github.com/narlei/fastlane-plugin-google-chat)

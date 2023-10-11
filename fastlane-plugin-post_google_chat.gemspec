@@ -2,16 +2,16 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'fastlane/plugin/google_chat_v2/version'
+require 'fastlane/plugin/post_google_chat/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'fastlane-plugin-google_chat_v2'
-  spec.version       = Fastlane::GoogleChatV2::VERSION
-  spec.author        = '“mao-karrostech”'
-  spec.email         = '“mao.bui@karrostech.com”'
+  spec.name          = 'fastlane-plugin-post_google_chat'
+  spec.version       = Fastlane::PostGoogleChat::VERSION
+  spec.author        = '“tumlw”'
+  spec.email         = '“tum.lionpunch@gmail.com”'
 
-  spec.summary       = 'google chat v2'
-  spec.homepage      = "https://github.com/mao-karrostech/fastlane-plugin-google_chat_v2"
+  spec.summary       = 'Post google chat webhook'
+  spec.homepage      = "https://github.com/tumlw/fastlane-plugin-post-google-chat"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"] + %w(README.md LICENSE)

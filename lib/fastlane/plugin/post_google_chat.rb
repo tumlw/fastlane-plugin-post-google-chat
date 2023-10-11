@@ -1,7 +1,7 @@
-require 'fastlane/plugin/google_chat_v2/version'
+require 'fastlane/plugin/post_google_chat/version'
 
 module Fastlane
-  module GoogleChatV2
+  module PostGoogleChat
     # Return all .rb files inside the "actions" and "helper" directory
     def self.all_classes
       Dir[File.expand_path('**/{actions,helper}/*.rb', File.dirname(__FILE__))]
@@ -11,6 +11,6 @@ end
 
 # By default we want to import all available actions and helpers
 # A plugin can contain any number of actions and plugins
-Fastlane::GoogleChatV2.all_classes.each do |current|
+Fastlane::PostGoogleChat.all_classes.each do |current|
   require current
 end

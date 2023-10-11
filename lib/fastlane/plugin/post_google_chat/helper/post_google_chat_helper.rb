@@ -4,12 +4,12 @@ module Fastlane
   UI = FastlaneCore::UI unless Fastlane.const_defined?("UI")
 
   module Helper
-    class GoogleChatV2Helper
+    class PostGoogleChatHelper
       # class methods that you define here become available in your action
       # as `Helper::GoogleChatV2Helper.your_method`
       #
       def self.show_message
-        UI.message("Hello from the google_chat_v2 plugin helper!")
+        UI.message("Hello from the post_google_chat plugin helper!")
       end
     end
   end

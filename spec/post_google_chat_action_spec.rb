@@ -1,4 +1,4 @@
-describe Fastlane::Actions::GoogleChatV2Action do
+describe Fastlane::Actions::PostGoogleChatAction do
   describe '#run' do
     it 'prints a message' do
       expect(Fastlane::UI).to receive(:message).with("Message sent!")
@@ -9,12 +9,10 @@ describe Fastlane::Actions::GoogleChatV2Action do
         title: 'Test title',
         description: 'Test description',
         section1Title: 'Test section title',
-        section1Description: 'Test section description',
-        buttonTitle: "Test button",
-        buttonUrl: "https://google.com"
+        section1Description: 'Test section description'
       }
 
-      Fastlane::Actions::GoogleChatV2Action.run(message)
+      Fastlane::Actions::PostGoogleChatAction.run(message)
     end
   end
 end

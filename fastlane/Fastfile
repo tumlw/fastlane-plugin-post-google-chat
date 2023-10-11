@@ -1,12 +1,12 @@
 lane :test do
-  google_chat_v2(
-    imageUrl: 'https://pbs.twimg.com/profile_images/571414468974739456/XtEn7sJS_400x400.png',
-    webhook: 'URL_OF_WEBHOOK',
+  post_google_chat(
+    imageUrl: 'https://fc-use1-00-pics-bkt-00.s3.amazonaws.com/81d00848ff780ffd58c3a859d0ea1904a414edf08a9599ab36e5edcae00387c3/f_marketingpicFull/u_3240cdefdb5556b239954f3437e2fcd4a344bfba03ab849f8fab8977ec803cc6/img_412jiueohp_cfc91cac70ef1d6485688a75628cd60bd501ba3f13b3b7bf2c3a7240c2b2b3c6.png
+
+      ',
+      webhook: 'https://chat.googleapis.com/v1/spaces/AAAA9_Qlw8Q/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=pNZfA1vAu5TeWA9baWXJse1hn8v6LQton582jL0tFqI',
     title: 'Build Success',
     description: 'Build (develop) success!',
     section1Title: 'Version',
-    section1Description: '1.1.1 (56)',
-    buttonTitle: "OPEN DASHBOARD",
-    buttonUrl: "https://fastlane.tools/"
+    section1Description: '1.1.1 (56)'
   )
 end
